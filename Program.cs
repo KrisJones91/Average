@@ -26,6 +26,15 @@ namespace random
                 Console.WriteLine("Please enter -1 once you are ready to calculate the average.");
 
                 input = Console.ReadLine();
+                if(input.Equals("-1"))
+                {
+                    Console.WriteLine(".........................");
+                }
+                if(int.TryParse(input, out currentNumber) && currentNumber > 0 && currentNumber < 21)
+                {
+                    // total = total + currentNumber
+                    total += currentNumber;
+                }
                 
             }
             
