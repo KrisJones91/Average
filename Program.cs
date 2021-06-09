@@ -29,8 +29,9 @@ namespace random
                 if(input.Equals("-1"))
                 {
                     Console.WriteLine(".........................");
-                }
                 // Calculate average
+                    double average = (double)total / (double)count;
+                }
                 if(int.TryParse(input, out currentNumber) && currentNumber > 0 && currentNumber < 21)
                 {
                     // total = total + currentNumber
@@ -44,6 +45,7 @@ namespace random
                     }
                     continue;
                 }
+                count++;
             }
             
             
