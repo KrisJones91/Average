@@ -30,12 +30,20 @@ namespace random
                 {
                     Console.WriteLine(".........................");
                 }
+                // Calculate average
                 if(int.TryParse(input, out currentNumber) && currentNumber > 0 && currentNumber < 21)
                 {
                     // total = total + currentNumber
                     total += currentNumber;
                 }
-                
+                else
+                {
+                    if(!(input.Equals(-1)))
+                    {
+                        Console.WriteLine("Please enter a value between 1 and 20");
+                    }
+                    continue;
+                }
             }
             
             
