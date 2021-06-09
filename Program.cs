@@ -31,6 +31,7 @@ namespace random
                     Console.WriteLine(".........................");
                 // Calculate average
                     double average = (double)total / (double)count;
+                    Console.WriteLine("The average score of your students is {0}", average);
                 }
                 if(int.TryParse(input, out currentNumber) && currentNumber > 0 && currentNumber < 21)
                 {
